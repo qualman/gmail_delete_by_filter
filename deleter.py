@@ -29,7 +29,7 @@ APPLICATION_NAME = 'Gmail API batchDelete by Query'
 # This query determines which emails will be returned for deletion.
 # It is HIGHLY recommended to check this query in the UI before deletion.
 # After deletion, THERE IS NO GOING BACK.
-QUERY = 'from:root@'
+QUERY = ''
 
 
 def get_credentials():
