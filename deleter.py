@@ -83,7 +83,7 @@ def list_filtered_messages(service):
                 break
 
         return messages
-    except errors.HttpError, error:
+    except errors.HttpError as error:
         print('An error occurred: {0}'.format(error))
 
 
@@ -109,7 +109,7 @@ def batch_delete_messages(service, messages):
         ).execute()
 
         print("I deleted stuff!")
-    except errors.HttpError, error:
+    except errors.HttpError as error:
         print('An error occurred while batchDeleting: {0}'.format(error))
 
 
